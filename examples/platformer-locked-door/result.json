@@ -1,0 +1,122 @@
+{
+  "success": true,
+  "ticks": 371,
+  "sim_seconds": 12.37,
+  "reason": "solved",
+  "log": [
+    "[t=43] collected key:purple key_1",
+    "[t=189] opened door door_1 (purple)",
+    "[t=371] failed to reach target at (54.5, 9.5)"
+  ],
+  "objectives": [
+    {
+      "id": "reach_goal",
+      "kind": "reach",
+      "description": "reach the goal",
+      "status": "passed"
+    },
+    {
+      "id": "survive",
+      "kind": "survive",
+      "description": "finish with at least 1 hp",
+      "status": "passed"
+    },
+    {
+      "id": "time_limit",
+      "kind": "time_limit",
+      "description": "finish within 185s",
+      "status": "passed"
+    }
+  ],
+  "events": [
+    [
+      1,
+      "jump",
+      {}
+    ],
+    [
+      29,
+      "key_collected",
+      {
+        "id": "key_1",
+        "color": "purple"
+      }
+    ],
+    [
+      54,
+      "jump",
+      {}
+    ],
+    [
+      91,
+      "jump",
+      {}
+    ],
+    [
+      123,
+      "jump",
+      {}
+    ],
+    [
+      162,
+      "jump",
+      {}
+    ],
+    [
+      188,
+      "door_opened",
+      {
+        "id": "door_1",
+        "color": "purple",
+        "by": "key"
+      }
+    ],
+    [
+      208,
+      "jump",
+      {}
+    ],
+    [
+      238,
+      "jump",
+      {}
+    ],
+    [
+      273,
+      "jump",
+      {}
+    ],
+    [
+      312,
+      "jump",
+      {}
+    ],
+    [
+      343,
+      "jump",
+      {}
+    ],
+    [
+      371,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      371,
+      "objective_passed",
+      {
+        "id": "reach_goal"
+      }
+    ],
+    [
+      371,
+      "episode_end",
+      {
+        "success": true,
+        "reason": "objectives_complete"
+      }
+    ]
+  ]
+}

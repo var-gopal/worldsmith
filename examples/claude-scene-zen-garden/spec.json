@@ -1,0 +1,78 @@
+{
+  "name": "zen-garden-courtyard",
+  "mode": "topdown",
+  "seed": 3,
+  "size": [
+    16,
+    12
+  ],
+  "tiles": [
+    "################",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "#..............#",
+    "################"
+  ],
+  "entities": [
+    {
+      "type": "player",
+      "pos": [
+        2.5,
+        2.5
+      ],
+      "id": "player_0"
+    },
+    {
+      "type": "goal",
+      "pos": [
+        13.5,
+        9.5
+      ],
+      "id": "goal_1"
+    },
+    {
+      "type": "coin",
+      "pos": [
+        7.5,
+        3.5
+      ],
+      "id": "coin_2"
+    },
+    {
+      "type": "coin",
+      "pos": [
+        8.5,
+        8.5
+      ],
+      "id": "coin_3"
+    }
+  ],
+  "objectives": [
+    {
+      "kind": "collect",
+      "id": "obj_0",
+      "item": "coin",
+      "count": 2
+    },
+    {
+      "kind": "reach",
+      "id": "obj_1",
+      "target": "goal"
+    }
+  ],
+  "meta": {
+    "verified": {
+      "solver": "worldsmith-planner",
+      "solution_ticks": 95,
+      "authored_by": "claude-scene",
+      "repair_rounds": 0
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "success": true,
+  "ticks": 996,
+  "sim_seconds": 33.2,
+  "reason": "solved",
+  "log": [
+    "[t=287] collected key:green key_1",
+    "[t=400] opened door door_1 (green)",
+    "[t=996] failed to reach target at (27.5, 15.5)"
+  ],
+  "objectives": [
+    {
+      "id": "reach_goal",
+      "kind": "reach",
+      "description": "reach the goal",
+      "status": "passed"
+    },
+    {
+      "id": "survive",
+      "kind": "survive",
+      "description": "finish with at least 1 hp",
+      "status": "passed"
+    },
+    {
+      "id": "time_limit",
+      "kind": "time_limit",
+      "description": "finish within 248s",
+      "status": "passed"
+    }
+  ],
+  "events": [
+    [
+      275,
+      "coin_collected",
+      {
+        "id": "coin_5"
+      }
+    ],
+    [
+      286,
+      "key_collected",
+      {
+        "id": "key_1",
+        "color": "green"
+      }
+    ],
+    [
+      381,
+      "coin_collected",
+      {
+        "id": "coin_8"
+      }
+    ],
+    [
+      400,
+      "door_opened",
+      {
+        "id": "door_1",
+        "color": "green",
+        "by": "key"
+      }
+    ],
+    [
+      425,
+      "damage",
+      {
+        "cause": "enemy_4",
+        "hp": 2
+      }
+    ],
+    [
+      591,
+      "coin_collected",
+      {
+        "id": "coin_10"
+      }
+    ],
+    [
+      665,
+      "coin_collected",
+      {
+        "id": "coin_12"
+      }
+    ],
+    [
+      996,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      996,
+      "objective_passed",
+      {
+        "id": "reach_goal"
+      }
+    ],
+    [
+      996,
+      "episode_end",
+      {
+        "success": true,
+        "reason": "objectives_complete"
+      }
+    ]
+  ]
+}

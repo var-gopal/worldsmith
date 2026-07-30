@@ -1,0 +1,104 @@
+{
+  "success": true,
+  "ticks": 509,
+  "sim_seconds": 16.97,
+  "reason": "solved",
+  "log": [
+    "[t=161] collected key:yellow key_1",
+    "[t=161] failed to open door door_1 (yellow)",
+    "[t=324] pressed plate plate_1 (orange)",
+    "[t=491] opened door door_1 (yellow)",
+    "[t=509] failed to reach target at (4.5, 1.5)"
+  ],
+  "objectives": [
+    {
+      "id": "reach_goal",
+      "kind": "reach",
+      "description": "reach the goal",
+      "status": "passed"
+    },
+    {
+      "id": "press_plate",
+      "kind": "press",
+      "description": "press the orange pressure plate (push a crate onto it)",
+      "status": "passed"
+    },
+    {
+      "id": "survive",
+      "kind": "survive",
+      "description": "finish with at least 1 hp",
+      "status": "passed"
+    },
+    {
+      "id": "time_limit",
+      "kind": "time_limit",
+      "description": "finish within 147s",
+      "status": "passed"
+    }
+  ],
+  "events": [
+    [
+      159,
+      "key_collected",
+      {
+        "id": "key_1",
+        "color": "yellow"
+      }
+    ],
+    [
+      319,
+      "plate_pressed",
+      {
+        "id": "plate_1",
+        "color": "orange"
+      }
+    ],
+    [
+      319,
+      "door_opened",
+      {
+        "id": "door_2",
+        "color": "orange",
+        "by": "plate"
+      }
+    ],
+    [
+      319,
+      "objective_passed",
+      {
+        "id": "press_plate"
+      }
+    ],
+    [
+      491,
+      "door_opened",
+      {
+        "id": "door_1",
+        "color": "yellow",
+        "by": "key"
+      }
+    ],
+    [
+      509,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      509,
+      "objective_passed",
+      {
+        "id": "reach_goal"
+      }
+    ],
+    [
+      509,
+      "episode_end",
+      {
+        "success": true,
+        "reason": "objectives_complete"
+      }
+    ]
+  ]
+}

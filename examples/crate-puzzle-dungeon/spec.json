@@ -1,0 +1,167 @@
+{
+  "name": "push-the-crate-onto-the",
+  "mode": "topdown",
+  "seed": 2,
+  "size": [
+    26,
+    15
+  ],
+  "tiles": [
+    "##########################",
+    "####....##################",
+    "####....##################",
+    "####....##########.......#",
+    "####....#.....####.......#",
+    "######.##.....####.......#",
+    "###....##.....####.......#",
+    "###...........#######.####",
+    "###....##.....####.......#",
+    "######.######.####.......#",
+    "######.##................#",
+    "######...........#.......#",
+    "#########........#.......#",
+    "##########################",
+    "##########################"
+  ],
+  "entities": [
+    {
+      "type": "player",
+      "pos": [
+        19.5,
+        3.5
+      ],
+      "id": "player_1"
+    },
+    {
+      "type": "goal",
+      "pos": [
+        4.5,
+        1.5
+      ],
+      "id": "goal_1"
+    },
+    {
+      "type": "key",
+      "pos": [
+        5.5,
+        7.5
+      ],
+      "id": "key_1",
+      "color": "yellow"
+    },
+    {
+      "type": "plate",
+      "pos": [
+        18.5,
+        5.5
+      ],
+      "id": "plate_1",
+      "color": "orange"
+    },
+    {
+      "type": "crate",
+      "pos": [
+        20.5,
+        5.5
+      ],
+      "id": "crate_1"
+    },
+    {
+      "type": "door",
+      "pos": [
+        4.5,
+        4.5
+      ],
+      "id": "door_1",
+      "color": "yellow"
+    },
+    {
+      "type": "door",
+      "pos": [
+        6.5,
+        5.5
+      ],
+      "id": "door_2",
+      "color": "orange"
+    }
+  ],
+  "objectives": [
+    {
+      "kind": "reach",
+      "id": "reach_goal",
+      "target": "goal"
+    },
+    {
+      "kind": "press",
+      "id": "press_plate",
+      "color": "orange"
+    },
+    {
+      "kind": "survive",
+      "id": "survive",
+      "min_hp": 1
+    },
+    {
+      "kind": "time_limit",
+      "id": "time_limit",
+      "seconds": 147.0
+    }
+  ],
+  "meta": {
+    "plan": {
+      "name": "push-the-crate-onto-the",
+      "mode": "topdown",
+      "layout": "dungeon",
+      "size": [
+        26,
+        15
+      ],
+      "doors": 1,
+      "plate": true,
+      "coins": 0,
+      "collect_coins": false,
+      "enemies": 0,
+      "lava": "none",
+      "spike_pits": 0,
+      "time_limit": 0.0
+    },
+    "generator": "dungeon",
+    "features": {
+      "doors": [
+        1,
+        1
+      ],
+      "plate": [
+        1,
+        1
+      ],
+      "plate_gated": [
+        1,
+        1
+      ],
+      "coins": [
+        0,
+        0
+      ],
+      "enemies": [
+        0,
+        0
+      ],
+      "lava": [
+        0,
+        0
+      ]
+    },
+    "verified": {
+      "solver": "worldsmith-planner",
+      "solution_ticks": 509,
+      "solution_seconds": 16.97,
+      "attempts": [
+        [
+          2,
+          "solved"
+        ]
+      ]
+    }
+  }
+}

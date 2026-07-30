@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "ticks": 95,
+  "sim_seconds": 3.17,
+  "reason": "solved",
+  "log": [
+    "[t=33] collected coin coin_2",
+    "[t=65] collected coin coin_3",
+    "[t=95] failed to reach target at (13.5, 9.5)"
+  ],
+  "objectives": [
+    {
+      "id": "obj_0",
+      "kind": "collect",
+      "description": "collect 2 coins",
+      "status": "passed",
+      "progress": "2/2"
+    },
+    {
+      "id": "obj_1",
+      "kind": "reach",
+      "description": "reach the goal",
+      "status": "passed"
+    }
+  ],
+  "events": [
+    [
+      31,
+      "coin_collected",
+      {
+        "id": "coin_2"
+      }
+    ],
+    [
+      64,
+      "coin_collected",
+      {
+        "id": "coin_3"
+      }
+    ],
+    [
+      64,
+      "objective_passed",
+      {
+        "id": "obj_0"
+      }
+    ],
+    [
+      95,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      95,
+      "objective_passed",
+      {
+        "id": "obj_1"
+      }
+    ],
+    [
+      95,
+      "episode_end",
+      {
+        "success": true,
+        "reason": "objectives_complete"
+      }
+    ]
+  ]
+}

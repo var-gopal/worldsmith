@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "ticks": 166,
+  "sim_seconds": 5.53,
+  "reason": "solved",
+  "player": "claude",
+  "objectives": [
+    {
+      "id": "obj_0",
+      "kind": "collect",
+      "description": "collect 2 coins",
+      "status": "passed",
+      "progress": "2/2"
+    },
+    {
+      "id": "obj_1",
+      "kind": "reach",
+      "description": "reach the goal",
+      "status": "passed"
+    }
+  ],
+  "events": [
+    [
+      65,
+      "coin_collected",
+      {
+        "id": "coin_3"
+      }
+    ],
+    [
+      97,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      97,
+      "objective_passed",
+      {
+        "id": "obj_1"
+      }
+    ],
+    [
+      119,
+      "goal_touched",
+      {
+        "id": "goal_1"
+      }
+    ],
+    [
+      166,
+      "coin_collected",
+      {
+        "id": "coin_2"
+      }
+    ],
+    [
+      166,
+      "objective_passed",
+      {
+        "id": "obj_0"
+      }
+    ],
+    [
+      166,
+      "episode_end",
+      {
+        "success": true,
+        "reason": "objectives_complete"
+      }
+    ]
+  ]
+}
